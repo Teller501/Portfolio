@@ -43,7 +43,7 @@ p {
 .grid-container{
     display: grid;
     row-gap: 30px;
-    grid-template-rows: 1fr 8fr 8fr 6fr 1fr;
+    grid-template-rows: 1fr 4fr 8fr 6fr 1fr;
     width: 100%;
     margin: auto;
     scroll-behavior: smooth;
@@ -72,7 +72,7 @@ p {
 
 .dropdown-content {
     font-family: AnonymousPro, sans-serif;
-    display: none;
+    display: inline-block;
     position: center;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -152,6 +152,14 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
+}
+
+.list-header {
+    text-align: center;
+    border-bottom: 2px solid #fdfb81;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
 }
 
 .title-text {
