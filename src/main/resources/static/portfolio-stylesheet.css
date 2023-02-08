@@ -43,7 +43,7 @@ p {
 .grid-container{
     display: grid;
     row-gap: 30px;
-    grid-template-rows: 1fr 12fr 8fr 6fr 1fr;
+    grid-template-rows: 1fr 8fr 8fr 6fr 1fr;
     width: 100%;
     margin: auto;
     scroll-behavior: smooth;
@@ -52,7 +52,7 @@ p {
 .top-bar{
     display: grid;
     grid-template-columns: 1fr;
-    min-height: 100px;
+    min-height: 75px;
 }
 
 #nav{
@@ -100,9 +100,25 @@ p {
 }
 
 #header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     justify-content: center;
     align-content: center;
     text-align: center;
+}
+
+#header-image {
+    display: block;
+    margin-right: 30px;
+    align-content: center;
+    border: 3px solid #555;
+}
+
+#header h2{
+    text-align: center;
+    border-bottom: 2px solid #fdfb81;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 #about{
