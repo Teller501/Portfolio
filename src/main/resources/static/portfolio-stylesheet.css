@@ -43,7 +43,7 @@ p {
 .grid-container{
     display: grid;
     row-gap: 30px;
-    grid-template-rows: 1fr 4fr 8fr 6fr 1fr;
+    grid-template-rows: 100px 700px 900px 1400px 100px;
     width: 100%;
     margin: auto;
     scroll-behavior: smooth;
@@ -203,7 +203,7 @@ p {
 .projects {
     display: grid;
     text-align: center;
-    grid-template-rows: 75px repeat(4, 50px);
+    grid-template-rows: 75px repeat(4, 400px);
 }
 
 .language-text{
@@ -229,10 +229,14 @@ p {
     display: block;
     align-content: center;
     margin: 0 auto;
-    width: 65%;
+    width: 50%;
     border: 2px solid darkgray;
     margin-bottom: 20px;
 }
+
+#superhero-project{grid-row: 2/3}
+#adventure-project{grid-row: 3/4}
+#delfinen-project{grid-row: 4/5}
 
 /*Footer section*/
 
