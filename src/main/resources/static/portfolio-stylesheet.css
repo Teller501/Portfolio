@@ -49,10 +49,13 @@ p {
     scroll-behavior: smooth;
 }
 
+/*Top bar menu*/
+
 .top-bar{
     display: grid;
     grid-template-columns: 1fr;
-    min-height: 75px;
+    min-height: 50px;
+    max-height: 75px;
 }
 
 #nav{
@@ -65,14 +68,14 @@ p {
     color: #393136;
     font-family: Antonio, sans-serif;
     padding: 16px;
-    font-size: 16px;
+    font-size: 32px;
     border: none;
     cursor: pointer;
 }
 
 .dropdown-content {
     font-family: AnonymousPro, sans-serif;
-    display: inline-block;
+    display: none;
     position: center;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -99,6 +102,8 @@ p {
     display: grid;
 }
 
+/*Header section*/
+
 #header{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -111,7 +116,8 @@ p {
     display: block;
     margin-right: 30px;
     align-content: center;
-    border: 3px solid #555;
+    width: 65%;
+    border: 2px solid darkgray;
 }
 
 #header h2{
@@ -120,6 +126,8 @@ p {
     width: fit-content;
     margin: 0 auto;
 }
+
+/*About section*/
 
 #about{
     justify-content: center;
@@ -142,11 +150,13 @@ p {
     background-color: #fdfb81;
 }
 
-#about-text{
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: center;
+.about-text{
+    padding-left: 35%;
+    padding-right: 35%;
+    text-align: left;
 }
+
+/*Education, jobs and projects section*/
 
 #lists {
     display: grid;
@@ -196,6 +206,61 @@ p {
     grid-template-rows: 75px repeat(4, 50px);
 }
 
-#footer {
-    text-align: center;
+.language-text{
+    font-family: AnonymousPro, sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.description{
+    font-family: AnonymousPro, sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed white;
+}
+
+
+.project-image {
+    display: block;
+    align-content: center;
+    margin: 0 auto;
+    width: 65%;
+    border: 2px solid darkgray;
+    margin-bottom: 20px;
+}
+
+/*Footer section*/
+
+.footer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-image-links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+}
+
+.footer-image-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#github-image{grid-column: 1/2;}
+#facebook-image{grid-column: 2/3;}
+#instagram-image{grid-column: 3/4;}
+
+.footer-text{
+    font-size: 10px;
+    text-align: center
 }

@@ -28,16 +28,18 @@
                 <h1>Hi!</h1>
                 <h2>I'm Anders Teller.</h2>
             </div>
-            <div id="header-image">
-                <img src="images/header-img.png" alt="Header Image">
+            <div class="header-image">
+                <img src="images/header-image.jpeg" alt="Header Image" id="header-image">
             </div>
         </div>
 
         <!-----About section----->
         <div id="about">
             <h2 id="about-header">About me</h2>
-            <p id="about-text">Der er skabelonkode til webside og CSS styling, som du skal bruge som udgangspunkt for opgaven.
-                Prøv dig frem ved at ændre i eksempelkoden, og lær på denne måde at forstå hvordan de enkelte dele i både html og cc filerne fungerer.</p>
+            <p class="about-text">I am a student at KEA, currently studying to be a computer scientist.
+            I have experience in writing in Java and a bit of C# from high school.<br></p>
+
+            <p class="about-text"><br>Currently, I am working on learning HTML & CSS, and later MySQL, so I can make some powerful websites.</p>
         </div>
 
         <!-----List of Educations, Jobs and projects----->
@@ -70,14 +72,31 @@
             <div class="projects">
                 <h2 class="list-header" id="projects-header">Projects</h2>
                 <div class="project-item">
+                    <img src="images/SuperheroProjekt.png" alt="Superhero Projekt" class="project-image">
                     <div class="title-text">Superhero project</div>
-                    <div id="language-text">Sprog: Java</div>
+                    <div class="language-text">Sprog: Java</div>
+                    <div class="description">The project allows the user to create, edit, search and delete superheroes in a database based on the CRUD principle (Create, Read, Update, Delete)<br>
+
+                        <br>We started this project at the beginning of the semester to learn how to use ArrayList in Java. Later we had to develop it to be able to read from and save to a CSV file.</div>
                 </div>
             </div>
         </div>
 
-        <div id="footer">
-            Footer
+        <div class="footer">
+            <div class="footer-image-links">
+                <div id="github-image">
+                    <a href="https://github.com/Teller501"><img src="images/github-image.png" alt="Github"></a>
+                    <p class="footer-text">Teller501</p>
+                </div>
+                <div id="facebook-image">
+                    <a href="https://www.facebook.com/anders.teller/"><img src="images/facebook-image.png" alt="Facebook"></a>
+                    <p class="footer-text">Anders Teller</p>
+                </div>
+                <div id="instagram-image">
+                    <a href="https://www.instagram.com/andersteller_/"><img src="images/instagram-image.png" alt="Instagram"></a>
+                    <p class="footer-text">andersteller_</p>
+                </div>
+            </div>
         </div>
 
     </div>
